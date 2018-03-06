@@ -1,16 +1,16 @@
 @font-face {
   font-family: "droid";
-  src: url("/assets/fonts/reg.woff2") format("woff2"),
-    url("/assets/fonts/reg.woff") format("woff"),
-    url("/assets/fonts/reg.ttf") format("truetype");
+  src: url("../assets/fonts/reg.woff2") format("woff2"),
+    url("../assets/fonts/reg.woff") format("woff"),
+    url("../assets/fonts/reg.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "droid";
-  src: url("/assets/fonts/bold.woff2") format("woff2"),
-    url("/assets/fonts/bold.woff") format("woff"),
-    url("/assets/fonts/bold.ttf") format("truetype");
+  src: url("../assets/fonts/bold.woff2") format("woff2"),
+    url("../assets/fonts/bold.woff") format("woff"),
+    url("../assets/fonts/bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
