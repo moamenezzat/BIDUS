@@ -1,0 +1,101 @@
+$mainColor: #e3a3cc;
+$headerColor: #333;
+$subHeaderColor: #999;
+$arrowsColor: #ccc;
+$borderColor: #f0f0f0;
+$font: "droid", "Open Sans", sans-serif;
+$slideDuration: 3s;
+$slideAnimation: 0.5s;
+
+$imagesDirecetory: "/assets/images/";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  background: white;
+  color: $headerColor;
+  font-family: $font;
+  height: 100%;
+  line-height: 1.1;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.main-content {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.flex-end {
+  align-items: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.stretch-self {
+  align-self: stretch;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: $headerColor;
+}
+
+input,
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  font-family: $font;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
