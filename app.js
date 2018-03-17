@@ -6,7 +6,11 @@ var slideDuration = 3,
   rightControl = $(".slider__control.right"),
   indicators = $(".slider__indicator"),
   x = slides.eq(0).width(),
-  t = TweenLite;
+  t = TweenLite,
+  body = $("body"),
+  headerCartButton = $(".header__top__actions__cart"),
+  cart = $(".cart"),
+  cartBG = $(".cart__bg");
 
 // Slider Helper Functions
 function before(e) {
@@ -135,4 +139,14 @@ leftControl.on("click", function() {
   flipSliderbackword(function() {
     timer = setInterval(flipSliderForward, slideDuration * 1000);
   });
+});
+
+// cart logic
+headerCartButton.on("click", function() {
+  body.addClass("no-scroll");
+  cart.show();
+});
+cartBG.on("click", function() {
+  body.removeClass("no-scroll");
+  cart.hide();
 });

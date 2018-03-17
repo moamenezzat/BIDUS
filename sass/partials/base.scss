@@ -7,7 +7,7 @@ $font: "droid", "Open Sans", sans-serif;
 $slideDuration: 3s;
 $slideAnimation: 0.5s;
 
-$imagesDirecetory: "/assets/images/";
+$imagesDirecetory: "../assets/images/";
 
 * {
   box-sizing: border-box;
@@ -26,6 +26,9 @@ body {
   position: relative;
   overflow-x: hidden;
   height: 100%;
+  &.no-scroll {
+    overflow-y: hidden;
+  }
 }
 
 .rtl {
